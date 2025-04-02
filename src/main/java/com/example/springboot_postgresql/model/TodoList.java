@@ -10,11 +10,13 @@ import jakarta.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "Person")
-public class Person {
-    
+@Table(name = "TodoList")
+public class TodoList {
+    // Title, description, status
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
+    private String title;
+    private String description;
+    private String status;
 }
