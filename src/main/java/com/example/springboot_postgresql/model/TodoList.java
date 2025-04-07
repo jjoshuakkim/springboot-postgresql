@@ -19,4 +19,5 @@ public class TodoList {
     private String title;
     private String description;
     private String status;
+    private String aiInput;
 }
